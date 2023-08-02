@@ -1,209 +1,954 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <style>
-        .navbar{
-            display: flex;
-            justify-content: flex-end;
-        }
-        .btn-outline-success{
-            background-color: #20C287;
-            color: white;
-            border-radius: 125px;
-        }
-        #navbarSupportedContent a {
-            color: #20C287;
-            font-family: Poppins;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-        .nav-link{
-            color: #0E1133;
-            font-family: Poppins;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-        .search{
-            border-radius: 156px;
-            border: 1px solid #CECACA;
-            background: #FFF;
-            box-shadow: 0px 4px 250px 0px rgba(0, 0, 0, 0.25);
-            width: 321.03px;
-            height: 33.297px;
-            flex-shrink: 0;
-            margin-left: 150px;
-        }
-        #c1{
-            width: 219.321px;
-            height: 220.063px;
-            flex-shrink: 0;
-            border-radius: 24.529px;
-            background: #AD4BFF;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    body {
+      margin-left: 15px;
+    }
 
-        }
-        #c2{
-            width: 219.321px;
-            height: 220.063px;
-            flex-shrink: 0;
-            border-radius: 24.529px;
-            background: #4B83FF;;
+    .navbar {
+      display: flex;
+      justify-content: flex-end;
+     
+    }
 
-        }
-        #c3{
-            width: 219.321px;
-            height: 220.063px;
-            flex-shrink: 0;
-            border-radius: 24.529px;
-            background: #FFAC30;
+    .btn-outline-success {
+      background-color: #20C287;
+      color: white;
+      border-radius: 125px;
+    }
 
-        }
-        .innerbox h4{
-            color: #FFF;
-            font-family: Poppins;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-        #c11{
-            width: 219.321px;
-            height: 220.063px;
-            flex-shrink: 0;
-            border-radius: 24.529px;
-            background: rgba(255, 101, 27, 0.83);
-;
+    #navbarSupportedContent a {
+      color: #20C287;
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
 
-        }
-        #c22{
-            width: 219.321px;
-            height: 220.063px;
-            flex-shrink: 0;
-            border-radius: 24.529px;
-            background: #FF6B6B;
+    .nav-link {
+      color: #0E1133;
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
 
-        }
-        #c33{
-            width: 219.321px;
-            height: 220.063px;
-            flex-shrink: 0;
-            border-radius: 24.529px;
-            background: #6BD462;
+    .search {
+      border: 1px solid black;
+      width: 532.03px;
+      height: 73.297px;
+      flex-shrink: 0;
+      border-radius: 156px;
+      border: 1px solid #CECACA;
+      background: #FFF;
+      box-shadow: 0px 4px 250px 0px rgba(0, 0, 0, 0.25);
+    }
 
-        }
-        #r1{
-            display: flex;
-            gap: 15px;
-        }
-        #r2{
-            display: flex;
-            gap: 15px;
-        }
-    </style>
+    .search img{
+     
+     margin-left: -170px;
+     margin-top: 20px;
+    }
+    .search input {
+      border: none;
+      color: rgba(41, 45, 50, 0.76);
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    #c1 {
+      width: 219.321px;
+      height: 220.063px;
+      flex-shrink: 0;
+      border-radius: 24.529px;
+      background: #AD4BFF;
+
+    }
+
+    #c2 {
+      width: 219.321px;
+      height: 220.063px;
+      flex-shrink: 0;
+      border-radius: 24.529px;
+      background: #4B83FF;
+      ;
+
+    }
+
+    #c3 {
+      width: 219.321px;
+      height: 220.063px;
+      flex-shrink: 0;
+      border-radius: 24.529px;
+      background: #FFAC30;
+
+    }
+
+    .innerbox h4 {
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    #c11 {
+      width: 219.321px;
+      height: 220.063px;
+      flex-shrink: 0;
+      border-radius: 24.529px;
+      background: rgba(255, 101, 27, 0.83);
+      ;
+
+    }
+
+    #c22 {
+      width: 219.321px;
+      height: 220.063px;
+      flex-shrink: 0;
+      border-radius: 24.529px;
+      background: #FF6B6B;
+
+    }
+
+    #c33 {
+      width: 219.321px;
+      height: 220.063px;
+      flex-shrink: 0;
+      border-radius: 24.529px;
+      background: #6BD462;
+
+    }
+
+    #r1 {
+      display: flex;
+      gap: 15px;
+    }
+
+    #r2 {
+      display: flex;
+      gap: 15px;
+    }
+
+    .row-cols-2>.col {
+      
+      display: flex;
+      justify-content: flex-start;
+    }
+
+   
+
+    .home {
+      background-color: #c4c4c41b;
+      width: 1440px;
+      height: 649.657px;
+      flex-shrink: 0;
+      
+    }
+
+    .row>#heading {
+      color: #262626;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 64.34px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-left: -40px;
+    }
+
+    /* second container */
+    .whatsdue {
+      background-color: #F3F4F8;
+      /* border: 1px solid green; */
+      width: 1440px;
+      height: 766.149px;
+      flex-shrink: 0;
+
+    }
+
+    .first {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+
+    .mid {
+      border: 1px solid blue;
+      width: 418.546px;
+      height: 69.56px;
+      flex-shrink: 0;
+      border-radius: 122.387px;
+      border: 0.8px solid rgba(32, 194, 135, 0.44);
+      background: rgba(255, 255, 255, 0.65);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mid button {
+      width: 129.544px;
+      height: 54.092px;
+      flex-shrink: 0;
+      border-radius: 67.201px;
+      background: rgba(255, 255, 255, 0.65);
+      box-shadow: 0px 9.081151008605957px 37.23271942138672px 0px rgba(32, 194, 135, 0.20);
+      border: none;
+      color: rgba(20, 24, 62, 0.64);
+      font-family: Poppins;
+      font-size: 17.599px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    .mid button:hover {
+      background-color: #20C287;
+    }
+
+    .angular {
+      display: flex;
+    }
+
+    .angular h1 {
+      color: #14183E;
+      font-family: Poppins;
+      font-size: 25.675px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .second .col {
+      margin-top: 50px;
+      border: 1px solid red;
+      width: 416.659px;
+      height: 116.09px;
+      flex-shrink: 0;
+      border-radius: 10.454px;
+      background: #FFF;
+      box-shadow: 0px 13.304471969604492px 57.969482421875px 0px rgba(0, 0, 0, 0.06);
+      margin-left: 20px;
+      border: none;
+    }
+
+    .second .col:hover {
+      background-color: #20C287;
+    }
+
+    .but1 {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 50px;
+
+    }
+
+    .but1 button {
+      width: 159.48px;
+      height: 54.092px;
+      flex-shrink: 0;
+      border-radius: 67.201px;
+      background: #20C287;
+      box-shadow: 0px 9.081151008605957px 37.23271942138672px 0px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .but1 button h4 {
+      color: white;
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 15.717px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
+    .but1>h4 {
+      color: var(--3rd, #14183E);
+      font-family: Poppins;
+      font-size: 17.599px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      width: 150px;
+      display: flex;
+
+
+    }
+
+    /* Third Container */
+    .WhatsNew {
+      
+      width: 1440px;
+      height: 750px;
+      background: #FFF;
+    }
+
+    .first1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 50px 110px;
+
+    }
+
+    .dropdown {
+     
+    }
+
+    .dropdown select {
+
+      width: 300.071px;
+      height: 97px;
+      flex-shrink: 0;
+      border-radius: 10.454px;
+      border: 1px solid #EEE;
+      background: #FFF;
+      box-shadow: 0px 13.304471969604492px 57.969482421875px 0px rgba(0, 0, 0, 0.06);
+      margin-left: 50px;
+      color: var(--3rd, #14183E);
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      border: none;
+    }
+
+    .d1 {
+     
+      width: 447.071px;
+      height: 97px;
+      flex-shrink: 0;
+      border-radius: 10.454px;
+      border: 1px solid #EEE;
+      background: #FFF;
+      box-shadow: 0px 13.304471969604492px 57.969482421875px 0px rgba(0, 0, 0, 0.06);
+      display: flex;
+      margin-left: 40px;
+    }
+
+    .d1 #img2 {
+      margin-left: -45px;
+      z-index: 1;
+      margin-top: 35px;
+    }
+
+    .d1 #img1 {
+      margin-top: 20px;
+    }
+
+    .course {
+      
+    }
+
+    .second {
+      display: flex;
+      gap: 100px;
+    }
+
+    .box1 {
+      border: 1px solid red;
+      width: 373.965px;
+      height: 182.441px;
+      flex-shrink: 0;
+      border-radius: 15px;
+      border: 1.3px solid rgba(20, 24, 62, 0.19);
+      background: #FFF;
+    }
+
+    .box1 #p1 {
+      color: var(--3rd, #14183E);
+      font-family: Poppins;
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-top: 20px;
+      margin-left: -95px;
+    }
+
+    .box1 #p2 {
+      color: rgba(20, 24, 62, 0.64);
+      font-family: Poppins;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-left: -40px;
+    }
+
+    .box1 button {
+      width: 159.48px;
+      height: 54.092px;
+      flex-shrink: 0;
+      border-radius: 67.201px;
+      background: #20C287;
+      box-shadow: 0px 9.081151008605957px 37.23271942138672px 0px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      border: none;
+      margin-left: 40px;
+
+    }
+
+    .box1 button h4 {
+      color: white;
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 15.717px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-transform: capitalize;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
+    .view button {
+      width: 195.565px;
+      height: 75.235px;
+      flex-shrink: 0;
+      border-radius: 13px;
+      background: #20C287;
+      box-shadow: 0px 8px 41px 0px rgba(32, 194, 135, 0.20);
+      color: white;
+      margin: 100px 0px;
+    }
+
+    /* fourth */
+    .certificate {
+      width: 1440px;
+      height: 767.846px;
+      flex-shrink: 0;
+      background: #F3F4F8;
+      
+      display: flex;
+     
+    }
+    .certificate h1{
+      margin-top: 120px;
+    }
+    .image {
+      
+      width: 720px;
+      height: 767.846px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .certifi {
+      width: 431.694px;
+      height: 113.568px;
+      flex-shrink: 0;
+      border-radius: 15.646px;
+      border: 1.891px solid rgba(20, 24, 62, 0.10);
+      background: #FFF;
+      box-shadow: 0px 14.602930068969727px 63.627052307128906px 0px rgba(32, 194, 135, 0.06);
+      border: 1px solid black;
+      margin-top: 50px;
+    }
+    .seemore button{
+      margin-top: -80px;
+      margin-left: -200px;
+      background-color: #FFAC30;
+      margin-top: 10px;
+    }
+    .container-fluid{
+      display: flex;
+      justify-content: space-around;
+      margin: 0px 150px;
+    }
+  </style>
 </head>
-<body>
-   <div class="navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Job Aids</a>
-        </li>
-       
-        
-      </ul>
-      <form class="d-flex" role="search">
-        
-        <button class="btn btn-outline-success" type="submit">Login</button>
-      </form>
-    </div>
-  </div>
-</nav>
-   </div>
 
-   <div class="container text-center">
-    <div class="row row-cols-2">
-      <div class="col"><img src="./image 33.png" alt=""></div>
-      <div class="col">
-       <div class="row" id="r1">
-        <div class="col" id="c1">
-           <div class="innerbox">
-            <img src="./Ellipse 105.png" alt="" style="align-items: center; margin-top: 30px;">
-            <br><br>
-            <h4>School Tools</h4>
-           </div>
+<body>
+  <div class="home">
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Job Aids</a>
+              </li>
+
+
+            </ul>
+            <form class="d-flex" role="search">
+
+              <button class="btn btn-outline-success" type="submit">Login</button>
+            </form>
+          </div>
         </div>
-        <div class="col" id="c2">
-            <div class="innerbox">
+      </nav>
+    </div>
+
+    <div class="container text-center">
+      <!-- first row -->
+      <div class="row row-cols-2">
+
+        <div class="col">
+          <img src="./image 33.png" alt="">
+        </div>
+        <div class="col">
+          <div class="row" id="r1">
+            <div class="col" id="c1">
+              <div class="innerbox">
+                <img src="./Ellipse 105.png" alt="" style="align-items: center; margin-top: 30px;">
+                <br><br>
+                <h4>School Tools</h4>
+              </div>
+            </div>
+            <div class="col" id="c2">
+              <div class="innerbox">
                 <img src="./Ellipse 105 (1).png" alt="" style="align-items: center; margin-top: 30px;">
                 <br><br>
                 <h4>District OPS</h4>
-               </div>
-        </div>
-        <div class="col" id="c3">
-            <div class="innerbox">
+              </div>
+            </div>
+            <div class="col" id="c3">
+              <div class="innerbox">
                 <img src="./Group 359631.png" alt="" style="align-items: center; margin-top: 30px;">
                 <br><br>
                 <h4>Certifivations</h4>
-               </div>
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
-      </div>
-      <div class="col"><h1>principal portal</h1>
-        <br>
-    <form action="">
-       <div class="search">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-          </svg>
-        <input type="text" placeholder="what are you looking for" style="border: none;">
-       </div>
-    </form>
-    </div>
-      <div class="col">
-        <div class="row" id="r2">
+        <!-- second row -->
+        <div class="col">
+          <div class="row">
+            <h1 id="heading">principal portal</h1>
+
+            <form action="">
+              <div class="search">
+               <img src="./search-normal.png" alt="">
+                <input type="text" placeholder="what are you looking for" style="border: none;">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row" id="r2">
             <div class="col" id="c11">
-               <div class="innerbox">
+              <div class="innerbox">
                 <img src="./Group 35963 (1).png" alt="" style="align-items: center; margin-top: 30px;">
                 <br><br>
                 <h4>Action</h4>
-               </div>
+              </div>
             </div>
             <div class="col" id="c22">
-                <div class="innerbox">
-                    <img src="./Ellipse 105 (2).png" alt="" style="align-items: center; margin-top: 30px;">
-                    <br><br>
-                    <h4>Student Info</h4>
-                   </div>
+              <div class="innerbox">
+                <img src="./Ellipse 105 (2).png" alt="" style="align-items: center; margin-top: 30px;">
+                <br><br>
+                <h4>Student Info</h4>
+              </div>
             </div>
             <div class="col" id="c33">
-                <div class="innerbox">
-                    <img src="./Group 35963.png" alt="" style="align-items: center; margin-top: 30px;">
-                    <br><br>
-                    <h4>What's New</h4>
-                   </div>
+              <div class="innerbox">
+                <img src="./Group 35963.png" alt="" style="align-items: center; margin-top: 30px;">
+                <br><br>
+                <h4>What's New</h4>
+              </div>
             </div>
-           </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <!-- second container -->
+  <div class="whatsdue">
+    <!-- first part -->
+    <div class="first">
+      <!-- title -->
+      <div class="title1">
+        <h1>what's Due</h1>
+      </div>
+      <!-- middle options -->
+      <div class="mid">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+          data-bs-title="Tooltip on top">
+          All
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-title="Tooltip on right">
+          Elem
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+          data-bs-title="Tooltip on bottom">
+          Scond
+        </button>
+
+      </div>
+      <!-- last Options -->
+      <div class="angular">
+        <img src="./chevron-right.png" alt="" width="33.761px" height="33.761px">
+        <span>
+          <h1>March2021</h1>
+        </span>
+        <img src="./chevron-right (1).png" alt="" width="33.761px" height="33.761px">
+      </div>
+    </div>
+
+    <!-- second part-->
+    <div class="second">
+      <div class="container text-center">
+        <!-- first row -->
+        <div class="row">
+          <div class="col">
+
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+          <div class="col">
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+          <div class="col">
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- second Row -->
+        <div class="row">
+          <div class="col">
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+          <div class="col">
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+          <div class="col">
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- Third row -->
+        <div class="row">
+          <div class="col">
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+          <div class="col">
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+          <div class="col">
+            <div class="but1">
+              <h4>Fall ShakeOut Earth quake Drill </h4>
+              <button><img src="./clock.png" alt="">
+                <h4>10-10-2021</h4>
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third Container -->
+  <div class="WhatsNew">
+    <!-- first part -->
+    <div class="first1">
+      <!-- title -->
+      <div class="title1">
+        <h1>what's New</h1>
+      </div>
+
+      <!-- last Options -->
+      <div class="angular">
+        <img src="./chevron-right.png" alt="" width="33.761px" height="33.761px">
+        <span>
+          <h1>March2021</h1>
+        </span>
+        <img src="./chevron-right (1).png" alt="" width="33.761px" height="33.761px">
+      </div>
+    </div>
+    <!-- second part -->
+    <div class="second">
+      <div class="dropdown">
+
+        <div class="d1">
+          <img src="./Rectangle 2692.png" alt="rext" id="img1"
+            style="width: 58.669px ; height:  58.672px; flex-shrink: 0;">
+
+          <img src="./Ellipse 106.png" alt="map" id="img2" style="width: 33.8px; height:33.8px ; flex-shrink: 0;">
+          <select name="Local District" id="">
+
+            <option value="">Kolhapur</option>
+            <option value="">Local District</option>
+            <option value="">Kolhapur</option>
+          </select>
+        </div>
+
+        <div class="d1">
+          <img src="./Rectangle 2692.png" alt="rext" id="img1"
+            style="width: 58.669px ; height:  58.672px; flex-shrink: 0;">
+
+          <img src="./Ellipse 1062.png" alt="map" id="img2" style="width: 33.8px; height:33.8px ; flex-shrink: 0;">
+          <select name="Local District" id="">
+
+
+            <option value="">School Type</option>
+
+          </select>
+        </div>
+
+        <div class="d1">
+          <img src="./Rectangle 2692.png" alt="rext" id="img1"
+            style="width: 58.669px ; height:  58.672px; flex-shrink: 0;">
+
+          <img src="./Ellipse 1063.png" alt="map" id="img2" style="width: 33.8px; height:33.8px ; flex-shrink: 0;">
+          <select name="Local District" id="">
+
+            <option value="">Category</option>
+
+          </select>
+        </div>
+        <div class="view">
+          <button>View More <img src="./Group 35901.png" alt=""></button>
+        </div>
+      </div>
+
+      <div class="course">
+        <div class="container text-center">
+          <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+          <div class="row">
+            <div class="col-6">
+              <div class=" box1">
+                <p id="p1">Data and Accountability </p>
+                <p id="p2">Fall 2021 School Experience Survey</p>
+                <button><img src="./clock.png" alt="">
+                  <h4>10-10-2021</h4>
+                </button>
+              </div>
+            </div>
+            <div class="col-6 ">
+              <div class=" box1">
+                <p id="p1">Data and Accountability </p>
+                <p id="p2">Fall 2021 School Experience Survey</p>
+                <button><img src="./clock.png" alt="">
+                  <h4>10-10-2021</h4>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+          <div class="row">
+            <div class="col-6 box">
+              <div class=" box1">
+                <p id="p1">Data and Accountability </p>
+                <p id="p2">Fall 2021 School Experience Survey</p>
+                <button><img src="./clock.png" alt="">
+                  <h4>10-10-2021</h4>
+                </button>
+              </div>
+            </div>
+            <div class="col-6 box">
+              <div class=" box1">
+                <p id="p1">Data and Accountability </p>
+                <p id="p2">Fall 2021 School Experience Survey</p>
+                <button><img src="./clock.png" alt="">
+                  <h4>10-10-2021</h4>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columns are always 50% wide, on mobile and desktop -->
+          <div class="row">
+            <div class="col-6 box">
+              <div class=" box1">
+                <p id="p1">Data and Accountability </p>
+                <p id="p2">Fall 2021 School Experience Survey</p>
+                <button><img src="./clock.png" alt="">
+                  <h4>10-10-2021</h4>
+                </button>
+              </div>
+            </div>
+            <div class="col-6 box">
+              <div class=" box1">
+                <p id="p1">Data and Accountability </p>
+                <p id="p2">Fall 2021 School Experience Survey</p>
+                <button><img src="./clock.png" alt="">
+                  <h4>10-10-2021</h4>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Fourth Container -->
+  <div class="certificate">
+    <div class="image">
+      <img src="./students.png" alt="">
+
+    </div>
+    <div class="certioption">
+      <h1>Certifications</h1>
+      <div class="container text-center">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-md-8">
+            <div class="but1 certifi">
+              <img src="./Group3.png" alt="">
+
+              <h4>Administrator</h4>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <div class="but1 certifi">
+              <img src="./Group3.png" alt="">
+
+              <h4>Administrator</h4>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-6">
+            <div class="but1 certifi">
+              <img src="./Group3.png" alt="">
+
+              <h4>Administrator</h4>
+
+            </div>
+          </div>
+          
+       
+      </div>
+      <div class="view seemore">
+        <button>View More <img src="./Group 359012.png" alt=""></button>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- fifth container -->
+  <div class="schooltools">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <h1>School Tools</h1>
+          
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            
+          </form>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
